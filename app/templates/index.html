@@ -117,7 +117,7 @@
   //pinch.recognizeWith(rotate);
   // add to the Manager
   mc.add([rotate]);
-  mc.on("pinch rotate", function(ev) {
+  mc.on("rotate", function(ev) {
     rotatebox.textContent += ev.type +" ";
   });
   
@@ -133,7 +133,7 @@
   //pinch.recognizeWith(rotate);
   // add to the Manager
   mc.add([pinch]);
-  mc.on("pinch rotate", function(ev) {
+  mc.on("pinch", function(ev) {
     pinchbox.style.background = "white";
   });
   
